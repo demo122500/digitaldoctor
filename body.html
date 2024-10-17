@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean Slideshow</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+        }
+        .slideshow-container {
+            width: 100%;
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #fff;
+        }
+        .slide-content {
+            position: relative;
+            left: 3%;
+            width: 40%;
+            padding: 20px;
+            background-color: red;
+            color: #000;
+        }
+        .slide-content h2 {
+            margin: 0 0 10px;
+        }
+        .slide-content p {
+            margin: 0 0 20px;
+        }
+        .cta {
+            display: inline-block;
+            margin: 10px 10px 0 0;
+            padding: 10px 20px;
+            background: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .cta.secondary {
+            background: #6c757d;
+        }
+        .swiper-slide img {
+            width: 50%;
+            height: auto;
+            max-height: 400px;
+            object-fit: cover;
+        }
+        .swiper-pagination {
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <h2>Support and repair with lowest costs</h2>
+                        <p>Are you looking for phone or any other device repair? We carry out a large number of mobile repairs every month and help you fix your device as well.</p>
+                        <a href="#" class="cta">Buy Theme</a>
+                        <a href="#" class="cta secondary">Get in Touch</a>
+                    </div>
+                    <img src="assets/bg3.webp" alt="Support and repair with lowest costs">
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <h2>Extend Your Battery Life</h2>
+                        <p>Don't let a low battery ruin your day. Get a battery replacement and enjoy longer usage.</p>
+                        <a href="#" class="cta">Buy Theme</a>
+                        <a href="#" class="cta secondary">Get in Touch</a>
+                    </div>
+                    <img src="assets/bg4.webp" alt="Extend Your Battery Life">
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <h2>Boost Your Phone's Performance</h2>
+                        <p>Is your phone running slow? Let us help you improve its performance with our expert services.</p>
+                        <a href="#" class="cta">Buy Theme</a>
+                        <a href="#" class="cta secondary">Get in Touch</a>
+                    </div>
+                    <img src="assets/crackedphone.jpg" alt="Boost Your Phone's Performance">
+                </div>
+            </div>
+            <!--
+            <div class="swiper-pagination"></div>
+            -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>

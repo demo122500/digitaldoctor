@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Repair Booking</title>
+    <style>
+      body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+      }
+
+      .hero {
+          text-align: center;
+          padding: 50px 20px;
+          background-color: #f9f9f9;
+      }
+
+      .hero .swiper-container {
+          width: 100%;
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 20px 0;
+      }
+
+      .hero h1 {
+          font-size: 36px;
+          margin-top: 20px;
+      }
+
+      .hero p {
+          font-size: 18px;
+          margin-top: 10px;
+      }
+
+      .hero .cta {
+          display: inline-block;
+          margin-top: 20px;
+          padding: 10px 20px;
+          background-color: #4CAF50;
+          color: white;
+          text-decoration: none;
+          border-radius: 5px;
+      }
+
+      .phone-services {
+          display: flex;
+          justify-content: center;
+          padding: 20px;
+          background-color: #f4f4f4;
+      }
+
+      .phone-services .service {
+          margin: 0 20px;
+          text-align: center;
+      }
+
+      .phone-services .service img {
+          width: 100px;
+          height: 100px;
+      }
+
+      .phone-services .service h3 {
+          margin-top: 10px;
+      }
+
+      .booking-section {
+          padding: 50px 20px;
+          background-color: #2B4A7B;
+          color: white;
+      }
+
+      .booking-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: flex-start;
+          max-width: 1200px;
+          margin: 0 auto;
+      }
+
+      .booking-info {
+          flex: 1;
+          margin-right: 20px;
+      }
+
+      .booking-info h2 {
+          font-size: 28px;
+          margin-bottom: 10px;
+      }
+
+      .booking-info p {
+          font-size: 18px;
+          line-height: 1.5;
+      }
+
+      .booking-form {
+          flex: 1;
+          background-color: #ffffff;
+          color: #333;
+          padding: 20px;
+          border-radius: 5px;
+      }
+
+      .booking-form form {
+          display: flex;
+          flex-direction: column;
+      }
+
+      .booking-form label {
+          margin-top: 10px;
+          font-weight: bold;
+      }
+
+      .booking-form input,
+      .booking-form select {
+          padding: 10px;
+          margin-top: 5px;
+          font-size: 16px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+      }
+
+      .booking-form button {
+          margin-top: 20px;
+          padding: 10px 20px;
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 16px;
+      }
+
+      .booking-form button:hover {
+          background-color: #45a049;
+      }
+
+    </style>
+</head>
+<body>
+    <!-- Phone repair section -->
+    <div class="hero">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="assets/phone/cracked.png" alt="Cracked iPhone" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/phone/lowbat.png" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/phone/low-performance.png" alt="Cracked Google Pixel" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/phone/cracked2.png" alt="Cracked Google Pixel" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/phone/low-performance.png" alt="Cracked Google Pixel" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/phone/low-performance.png" alt="Cracked Google Pixel" />
+                </div>
+                <!-- Add more slides as needed -->
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <h1>Phone Repair Services</h1>
+        <p>
+            Don’t let a damaged phone slow you down. Get quick and reliable repairs
+            from our experienced technicians.
+        </p>
+        <a href="#booking" class="cta">Book Now</a>
+    </div>
+
+    <div class="phone-services">
+        <div class="service">
+            <img src="assets/item1.png" alt="Screen Replacement" />
+            <h3>Screen Replacement</h3>
+        </div>
+        <div class="service">
+            <img src="assets/item1.png" alt="Longer Battery Life" />
+            <h3>Longer Battery Life</h3>
+        </div>
+        <div class="service">
+            <img src="assets/item1.png" alt="Data Recovery" />
+            <h3>Retrieving Lost Data</h3>
+        </div>
+    </div>
+
+    <!-- Booking Section -->
+    <div id="booking" class="booking-section">
+        <div class="booking-container">
+            <div class="booking-info">
+                <h2>Book Your Phone Repair</h2>
+                <p>Fill out the form below to book a repair appointment with our expert technicians. We’ll get your phone back in working order in no time!</p>
+            </div>
+            <div class="booking-form">
+                <form action="submit_booking.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    
+                    <label for="service">Service Needed:</label>
+                    <select id="service" name="service">
+                        <option value="screen-replacement">Screen Replacement</option>
+                        <option value="battery-replacement">Battery Replacement</option>
+                        <option value="data-recovery">Data Recovery</option>
+                    </select>
+                    
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" name="date" required>
+                    
+                    <label for="time">Preferred Time:</label>
+                    <input type="time" id="time" name="time" required>
+                    
+                    <button type="submit">Book Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
