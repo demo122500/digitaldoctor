@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Home | Digital Doctor</title>
-      <link rel="shortcut icon" type="image/png" href="assets/logo.png">
-      <link rel="stylesheet" href="styles.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Digital Doctor</title>
+    <link rel="shortcut icon" type="image/png" href="assets/logo.png" />
+    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -55,36 +64,46 @@
         </div>
       </div>
       <nav class="nav-bar">
-        <ul>
-          <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
-          <li class="dropdown">
-            <a href="services.html">OUR SERVICES
-              <i class="fa-solid fa-caret-down"></i>
-              <i class="fa-solid fa-caret-up"></i>
-            </a>
-            <ul class="dropdown-content">
-              <li><a href="#">MOBILE PHONE REPAIR</a></li>
-              <li><a href="#">TABLET & IPAD REPAIR</a></li>
-              <li><a href="#">DESKTOP REPAIR</a></li>
-              <li><a href="#">GAMING CONSOLES</a></li>
-              <li><a href="#">GAME SYSTEMS REPAIR</a></li>
-              <li><a href="#">OS INSTALLATION</a></li>
-              <li><a href="#">GAME INSTALLATION</a></li>
-              <li><a href="#">BACKUP & STORAGE</a></li>
-              <li><a href="#">PC CUSTOM BUILD</a></li>
-            </ul>
-          </li>
+        <div class="container">
+          <button class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="icons">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-square-youtube"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+          </div>
+        
+          <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+            <li class="dropdown">
+              <div class="dropdown-toggle-cotainer">
+                <a href="services.html">OUR SERVICES
+                </a>
+                <div class="dropdown-toggle">
+                  <i class="fa-solid fa-caret-up"></i>
+                  <i class="fa-solid fa-caret-down"></i>
+                </div>
+              </div>
+              <ul class="dropdown-content">
+                <li><a href="#">MOBILE PHONE REPAIR</a></li>
+                <li><a href="#">TABLET & IPAD REPAIR</a></li>
+                <li><a href="#">DESKTOP REPAIR</a></li>
+                <li><a href="#">GAMING CONSOLES</a></li>
+                <li><a href="#">GAME SYSTEMS REPAIR</a></li>
+                <li><a href="#">OS INSTALLATION</a></li>
+                <li><a href="#">GAME INSTALLATION</a></li>
+                <li><a href="#">BACKUP & STORAGE</a></li>
+                <li><a href="#">PC CUSTOM BUILD</a></li>
+              </ul>
+            </li>
 
-          <li><a href="about-us.html" class="menu-link">ABOUT US</a></li>
-          <li><a href="latest-news.html" class="menu-link">LATEST NEWS</a></li>
-          <li><a href="shop.html" class="menu-link">SHOP</a></li>
-          <li><a href="contact.html" class="menu-link">CONTACT US</a></li>
-        </ul>
-        <div class="icons">
-          <i class="fa-brands fa-square-facebook"></i>
-          <i class="fa-brands fa-square-twitter"></i>
-          <i class="fa-brands fa-square-youtube"></i>
-          <i class="fa-brands fa-square-instagram"></i>
+            <li><a href="about-us.html" class="menu-link">ABOUT US</a></li>
+            <li><a href="latest-news.html" class="menu-link">LATEST NEWS</a></li>
+            <li><a href="shop.html" class="menu-link">SHOP</a></li>
+            <li><a href="contact.html" class="menu-link">CONTACT US</a></li>
+          </ul>
         </div>
       </nav>
     </header>
@@ -271,7 +290,9 @@
             <i class="fa-solid fa-microchip"></i>
             <h3>YOUR GADGET</h3>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione asperiores ad, quaerat maiores incidunt, dolores iste perferendis temporibus, tenetur quia atque ut fuga dolor suscipit repudiandae quos minima fugit quo!</p>
+          <p>Bring your broken device to our expert technicians. We accept all
+            brands and models of smartphones, tablets, laptops, and gaming
+            consoles for professional diagnosis and repair.</p>
           <span>01.</span>
         </div>
         <div class="step">
@@ -279,24 +300,27 @@
             <i class="fa-solid fa-paper-plane"></i>
             <h3>SEND IT TO US</h3>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione asperiores ad, quaerat maiores incidunt, dolores iste perferendis temporibus, tenetur quia atque ut fuga dolor suscipit repudiandae quos minima fugit quo!</p>
-          <span>02.</span>
+          <p>Can't visit our store? No problem! Use our convenient mail-in
+            service. We'll provide secure packaging instructions and handle your
+            device with the utmost care during shipping.</span>
         </div>
         <div class="step">
           <div>
             <i class="fa-solid fa-wrench"></i>
             <h3>QUICK FIX</h3>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione asperiores ad, quaerat maiores incidunt, dolores iste perferendis temporibus, tenetur quia atque ut fuga dolor suscipit repudiandae quos minima fugit quo!</p>
-          <span>03.</span>
+          <p>Our certified technicians use state-of-the-art tools and genuine
+            parts to repair your device quickly and efficiently. Most repairs
+            are completed within 24-48 hours.</span>
         </div>
         <div class="step">
           <div>
             <i class="fa-solid fa-rotate-left"></i>
             <h3>FAST RETURN</h3>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione asperiores ad, quaerat maiores incidunt, dolores iste perferendis temporibus, tenetur quia atque ut fuga dolor suscipit repudiandae quos minima fugit quo!</p>
-          <span>04.</span>
+          <p>Once repaired, we'll notify you immediately. Pick up your device
+            in-store or have it shipped back to you with full testing
+            documentation and warranty information.</span>
         </div>
       </div>
     </section>
@@ -310,7 +334,9 @@
           </div>
           <div class="description">
             <h3>Android Lollipop</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero inventore impedit reiciendis deserunt molestiae officiis eius recusandae accusamus autem quibusdam.</p>  
+            <p>Complete Android device repair services including screen
+              replacement, battery replacement, camera repair, and software
+              troubleshooting for all Android brands and models.</p>  
           </div>
         </div>
         <div class="popular-services">
@@ -319,7 +345,9 @@
           </div>
           <div class="description">
             <h3>Apple iOS</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero inventore impedit reiciendis deserunt molestiae officiis eius recusandae accusamus autem quibusdam.</p>  
+            <p>Specialized iPhone and iPad repair services with genuine Apple
+              parts. From screen replacements to logic board repairs, we handle
+              all Apple device issues.</p>  
           </div>
         </div>
         <div class="popular-services">
@@ -328,7 +356,9 @@
           </div>
           <div class="description">
             <h3>OS Installation</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero inventore impedit reiciendis deserunt molestiae officiis eius recusandae accusamus autem quibusdam.</p>  
+            <p>Professional operating system installation and setup services for
+              Windows, macOS, and Linux. Clean installs, upgrades, and system
+              optimization included.</p>  
           </div>
         </div>
         <div class="popular-services">
@@ -346,7 +376,9 @@
           </div>
           <div class="description">
             <h3>Desktop System</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero inventore impedit reiciendis deserunt molestiae officiis eius recusandae accusamus autem quibusdam.</p>  
+            <p>Expert camera module repair and replacement for smartphones and
+              tablets. Fix blurry photos, camera app crashes, and hardware
+              failures.</p>  
           </div>
         </div>
         <div class="popular-services">
@@ -355,7 +387,9 @@
           </div>
           <div class="description">
             <h3>PC Custom Build</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero inventore impedit reiciendis deserunt molestiae officiis eius recusandae accusamus autem quibusdam.</p>  
+            <p>Custom PC building services for gaming, professional work, and
+              everyday use. Component selection, assembly, and optimization for
+              your specific needs.</p>  
           </div>
         </div>
     
@@ -398,9 +432,19 @@
           <img src="assets/digital-doctor-building.jpg" alt="">
           <img src="assets/technician-team.jpg" alt="">
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, laboriosam iste, fuga a rerum sapiente distinctio non necessitatibus atque iusto dicta cum voluptatem sit incidunt illo delectus itaque harum beatae.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati optio magnam reprehenderit dolores hic totam doloremque, aliquid aperiam commodi consectetur ipsum. Earum nihil nam asperiores tenetur adipisci dicta alias, tempore quas aliquid maiores consectetur laudantium fugit error, repudiandae cupiditate saepe deserunt placeat laborum accusantium omnis quam quos. Cumque, non saepe?</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed dicta laboriosam laborum tenetur expedita saepe blanditiis a qui in modi?</p>
+        <p>Digital Doctor is your trusted technology repair partner, providing
+          comprehensive repair services for all your electronic devices. Our
+          experienced technicians use state-of-the-art equipment and genuine
+          parts to ensure quality repairs.</p>
+        <p>With over 10 years of experience in the industry, we have successfully
+          repaired thousands of devices, from smartphones and tablets to laptops
+          and gaming consoles. Our commitment to excellence and customer
+          satisfaction has made us the go-to repair center in the community.</p>
+          <p>
+          We believe in transparent pricing, quick turnaround times, and
+          standing behind our work with comprehensive warranties. Visit us today
+          and experience the Digital Doctor difference.
+        </p>
         <a href="#">READ MORE<i class="fa-solid fa-caret-right"></i></a>
       </div>
       <div class="faq">
@@ -477,22 +521,26 @@
         <div class="gallery-list">
           <img src="assets/phone-broken-fixed.webp" alt="">
           <h3>iPhone 12 Pro</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur vel asperiores fuga voluptatem incidunt molestiae velit suscipit explicabo porro dolor.</p>
+          <p>Professional screen replacement and camera repair services for
+            iPhone 12 Pro. Quality parts and expert craftsmanship guaranteed.</p>
         </div>
         <div class="gallery-list">
           <img src="assets/laptop-broken-fixed.webp" alt="">
           <h3>MacBook Pro</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur vel asperiores fuga voluptatem incidunt molestiae velit suscipit explicabo porro dolor.</p>
+          <p>Complete MacBook Pro repair services including keyboard replacement,
+            screen repair, and logic board troubleshooting.</p>
         </div>
         <div class="gallery-list">
           <img src="assets/ipad-broken-fixed.webp" alt="">
           <h3>iPad Air</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur vel asperiores fuga voluptatem incidunt molestiae velit suscipit explicabo porro dolor.</p>
+          <p>Expert iPad Air repair services for screen damage, charging issues,
+            and software problems. Fast turnaround guaranteed.</p>
         </div>
         <div class="gallery-list">
           <img src="assets/gaming-console-broken-fixed.webp" alt="">
           <h3>Project X</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur vel asperiores fuga voluptatem incidunt molestiae velit suscipit explicabo porro dolor.</p>
+          <p>Gaming console repair services for all major brands including
+            PlayStation, Xbox, and Nintendo Switch systems.</p>
         </div>
         
       </div>
@@ -504,11 +552,13 @@
       <div class="rating-container">
         <div class="rating-item">
           <div class="user">
-            <img src="assets/user1.png" alt="">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face" alt="">
           </div>
           <div class="user-comment">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam ipsum perspiciatis placeat eum voluptatum maiores. Sequi animi nulla dignissimos sunt!</p>
-            <h3>Rommel Belia</h3>
+            <p>Excellent service! They fixed my iPhone screen in just 30 minutes
+              and it looks brand new. The staff was professional and the price
+              was very reasonable. Highly recommended!</p>
+            <h3>Michael Johnson</h3>
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
@@ -521,8 +571,10 @@
             <img src="assets/user1.png" alt="">
           </div>
           <div class="user-comment">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam ipsum perspiciatis placeat eum voluptatum maiores. Sequi animi nulla dignissimos sunt!</p>
-            <h3>Rommel Belia</h3>
+            <p>Great experience with Digital Doctor! My laptop was running very
+              slow and they cleaned it up perfectly. Now it runs like new again.
+              Will definitely come back for future repairs.</p>
+            <h3>Sarah Williams</h3>
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
@@ -535,8 +587,10 @@
             <img src="assets/user1.png" alt="">
           </div>
           <div class="user-comment">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam ipsum perspiciatis placeat eum voluptatum maiores. Sequi animi nulla dignissimos sunt!</p>
-            <h3>Rommel Belia</h3>
+            <p>Professional and trustworthy service. They diagnosed my gaming
+              console issue quickly and provided an honest quote. The repair was
+              completed on time and works perfectly now.</p>
+            <h3>David Chen</h3>
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
@@ -586,7 +640,10 @@
               <p>One stop, Tech repair</p>  
             </div>
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex assumenda perspiciatis corporis minus consequuntur praesentium nihil reiciendis, quisquam, quam eos velit vero voluptates, illo similique sequi reprehenderit amet at ab?</p>
+          <p>Your trusted technology repair partner. We provide professional
+            repair services for smartphones, tablets, laptops, gaming consoles,
+            and more. Quality repairs with genuine parts and expert
+            craftsmanship.</p>
           <i class="fa-brands fa-square-facebook"></i>
           <i class="fa-brands fa-square-twitter"></i>
           <i class="fa-brands fa-square-youtube"></i>
@@ -640,121 +697,186 @@
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper('.swiper-container', {
+      // Initialize Swiper
+      var swiper = new Swiper(".swiper-container", {
         loop: true,
         autoplay: {
-          delay: 3000,
-          disableOnInteraction: true,
-        },
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
+          delay: 4000,
+          disableOnInteraction: false,
         },
         navigation: {
-          nextEl: '.custom-next',
-          prevEl: '.custom-prev',
+          nextEl: ".custom-next",
+          prevEl: ".custom-prev",
         },
+        effect: "fade",
+        fadeEffect: {
+          crossFade: true,
+        },
+        speed: 600,
+      });
+
+      // Mobile menu toggle
+      const mobileToggle = document.querySelector(".mobile-menu-toggle");
+      const navMenu = document.getElementById("nav-menu");
+
+      mobileToggle.addEventListener("click", function () {
+        navMenu.classList.toggle("active");
+
+        // Change icon
+        const icon = this.querySelector("i");
+        if (navMenu.classList.contains("active")) {
+          icon.classList.remove("fa-bars");
+          icon.classList.add("fa-times");
+        } else {
+          icon.classList.remove("fa-times");
+          icon.classList.add("fa-bars");
+        }
+      });
+
+      // Close mobile menu when clicking on a link
+      const navLinks = document.querySelectorAll(".nav-bar .container ul li a");
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          navMenu.classList.remove("active");
+          const icon = mobileToggle.querySelector("i");
+          icon.classList.remove("fa-times");
+          icon.classList.add("fa-bars");
+        });
+      });
+
+      // Close mobile menu when clicking outside
+      document.addEventListener("click", function (event) {
+        const isClickInsideNav = navMenu.contains(event.target);
+        const isClickOnToggle = mobileToggle.contains(event.target);
+
+        if (
+          !isClickInsideNav &&
+          !isClickOnToggle &&
+          navMenu.classList.contains("active")
+        ) {
+          navMenu.classList.remove("active");
+          const icon = mobileToggle.querySelector("i");
+          icon.classList.remove("fa-times");
+          icon.classList.add("fa-bars");
+        }
+      });
+
+      // Dropdown menu handling
+      document.addEventListener("DOMContentLoaded", () => {
+        const dropdownMenu = document.querySelector(".nav-bar .container ul li.dropdown");
+        const dropdownContent = document.querySelector(
+          ".nav-bar ul li.dropdown .dropdown-content"
+        );
+
+        if (dropdownMenu && dropdownContent) {
+          // Initially hide the dropdown content
+          dropdownContent.style.display = "none";
+
+          dropdownMenu.addEventListener("mouseenter", () => {
+            if (window.innerWidth > 768) {
+              dropdownContent.style.display = "block";
+            }
+          });
+
+          dropdownMenu.addEventListener("mouseleave", () => {
+            if (window.innerWidth > 768) {
+              setTimeout(() => {
+                if (!dropdownContent.matches(":hover")) {
+                  dropdownContent.style.display = "none";
+                }
+              }, 100);
+            }
+          });
+
+          dropdownContent.addEventListener("mouseenter", () => {
+            if (window.innerWidth > 768) {
+              dropdownContent.style.display = "block";
+            }
+          });
+
+          dropdownContent.addEventListener("mouseleave", () => {
+            if (window.innerWidth > 768) {
+              dropdownContent.style.display = "none";
+            }
+          });
+        }
+      });
+
+      // Counter animation
+      document.addEventListener("DOMContentLoaded", () => {
+        const counters = document.querySelectorAll(".counter");
+
+        const options = {
+          root: null,
+          rootMargin: "0px",
+          threshold: 0.5,
+        };
+
+        const callback = (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const counter = entry.target;
+              const updateCounter = () => {
+                const target = +counter.getAttribute("data-target");
+                const count = +counter.innerText;
+                const increment = target / 200;
+
+                if (count < target) {
+                  counter.innerText = Math.ceil(count + increment);
+                  setTimeout(updateCounter, 1);
+                } else {
+                  counter.innerText = target;
+                }
+              };
+              updateCounter();
+              observer.unobserve(counter);
+            }
+          });
+        };
+
+        const observer = new IntersectionObserver(callback, options);
+
+        counters.forEach((counter) => {
+          observer.observe(counter);
+        });
+      });
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // Add scroll effect to navigation
+      window.addEventListener("scroll", function () {
+        const nav = document.querySelector(".nav-bar .container");
+        if (window.scrollY > 100) {
+          nav.style.boxShadow = "0 2px 10px rgba(0,0,0,0.1)";
+        } else {
+          nav.style.boxShadow = "none";
+        }
+      });
+
+      // Handle window resize for responsive behavior
+      window.addEventListener("resize", function () {
+        const navMenu = document.getElementById("nav-menu");
+        const mobileToggle = document.querySelector(".mobile-menu-toggle");
+
+        if (window.innerWidth > 768) {
+          navMenu.classList.remove("active");
+          const icon = mobileToggle.querySelector("i");
+          icon.classList.remove("fa-times");
+          icon.classList.add("fa-bars");
+        }
       });
     </script>
-
-  <script src="script.js"></script>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RepairPress</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
-        .header {
-          background-image: url(assets/header.png);
-          background-repeat: no-repeat;
-          display: flex; /* Use flexbox */
-          justify-content: space-between; /* Align items horizontally */
-          align-items: center; /* Align items vertically */
-          background-color: #0074D9;
-          color: #ffffff;
-          padding: 20px;
-        }
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .contact-info {
-            font-size: 14px;
-        }
-        .nav-links {
-          list-style: none;
-          padding: 0;
-          margin: 0;
-          display: flex; /* Use flexbox */
-        }
-        .nav-links li {
-            margin-right: 20px;
-        }
-        .buy-button {
-            background-color: #FF4136;
-            color: #ffffff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
-</head>
-<body>
-    <div class="header">
-        <div class="logo">RepairPress</div>
-        <ul class="nav-links">
-            <li>Home</li>
-            <li>Our Services</li>
-            <li>Latest News</li>
-            <li>Shop</li>
-            <li>Contact Us</li>
-        </ul>
-        <div class="contact-info">
-            1-888-123-4567 | info@repairpress.com | Mon-Fri 8:00 - 18:00
-        </div>
-        <button class="buy-button">BUY THEME</button>
-    </div>
-</body>
-</html>
-
